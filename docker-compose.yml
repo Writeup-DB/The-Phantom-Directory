@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  phantom-lab:
+    build: .
+    container_name: phantom_directory
+    ports:
+      - "8080:80"
+    restart: unless-stopped
